@@ -1,0 +1,18 @@
+def ship_name():
+    f_name = input("What is the first name? ")
+    s_name = input("What is the second name? ")
+    
+    consonants = ['sh', 'gl', 'ch', 'ph', 'tr','br', 'fr', 'bl', 'gr', 'st', 'sl', 'th', 'cl', 'pl', 'fl', 'kn']
+    if f_name[0:2].lower() in consonants:
+        shipname= f_name[0:2]+s_name[1:]
+        print(shipname)
+    elif s_name[0:2].lower in consonants:
+        shipname2 = s_name[1:]
+        print(shipname2)
+    else:
+        shipname = s_name[0]+ f_name[1:]
+        shipname2 = f_name[0] + s_name[1:]
+        print(shipname)
+        print(shipname2)
+
+ship_name()

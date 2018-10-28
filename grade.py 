@@ -1,0 +1,15 @@
+def main():
+    f_name = input("Please enter your first name: ")
+    l_name = input("Please enter your last name: ")
+    grade = int(input("Please enter the grade in the course: "))
+    if grade >= 90:
+        print("You have an A!")
+    elif 80 <= grade <90:
+        print ("You have a B!")
+    elif 70 <= grade <80:
+        print ("You have a C!")
+    elif 60 <= grade < 70:
+        print ("You have a D!")
+    elif grade <= 60:
+        print ("You are failing this class.")
+main()
